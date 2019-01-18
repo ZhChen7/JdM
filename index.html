@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
+    <script src="js/fastclick.js"></script>
     <title>京东移动端首页</title>
 </head>
 <body>
@@ -27,20 +28,22 @@
         </div>
     </header>
     <div class="jd_banner">
-        <ul>
-            <li><a href=""><img src="img/bannerc.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannere.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannerb.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannerd.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannerf.jpg" alt=""></a></li>
+        <ul class="clearFix">
+            <li><a href=""><img src="img/bannerh.jpg" alt=""></a></li>
             <li><a href=""><img src="img/bannera.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannerb.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannerc.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannerd.jpg" alt=""></a></li>
             <li><a href=""><img src="img/bannere.jpg" alt=""></a></li>
             <li><a href=""><img src="img/bannerf.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannerc.jpg" alt=""></a></li>
-            <li><a href=""><img src="img/bannerf.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannerg.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannerh.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/bannera.jpg" alt=""></a></li>
         </ul>
         <ul class="circle">
             <li class="now"></li>
+            <li></li>
+            <li></li>
             <li></li>
             <li></li>
             <li></li>
@@ -120,11 +123,14 @@
                 <div class="downtime-left">14点场</div>
                 <div class="downtime-right">
                     <ul>
-                        <li>01</li>
+                        <li class="time-seck">0</li>
+                        <li class="time-seck">0</li>
                         <li>:</li>
-                        <li>27</li>
+                        <li class="time-seck">0</li>
+                        <li class="time-seck">0</li>
                         <li>:</li>
-                        <li>30</li>
+                        <li class="time-seck">0</li>
+                        <li class="time-seck">0</li>
                     </ul>
                 </div>
             </div>
@@ -138,16 +144,20 @@
             </a>
             <a href=""><img src="img/seckill2.jpg" alt="">
                 <div class="seckill-price">￥68</div>
-                <div class="seckill-price-no">￥199</div></a>
+                <div class="seckill-price-no">￥199</div>
+            </a>
             <a href=""><img src="img/seckill3.jpg" alt="">
                 <div class="seckill-price">￥168</div>
-                <div class="seckill-price-no">￥2998</div></a>
+                <div class="seckill-price-no">￥2998</div>
+            </a>
             <a href=""><img src="img/seckill4.jpg" alt="">
                 <div class="seckill-price">￥79</div>
-                <div class="seckill-price-no">￥189</div></a>
+                <div class="seckill-price-no">￥189</div>
+            </a>
             <a href=""><img src="img/seckill5.jpg" alt="">
                 <div class="seckill-price">￥46</div>
-                <div class="seckill-price-no">￥156</div></a>
+                <div class="seckill-price-no">￥156</div>
+            </a>
         </footer>
     </div>
     <div class="jd_product">
@@ -156,8 +166,10 @@
         <section class="jd_product_box"></section>
         <section class="jd_product_box"></section>
     </div>
-
-
-</div>
+<script>
+    window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+    }, false);
+</script>
 </body>
 </html>

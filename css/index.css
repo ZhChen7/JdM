@@ -137,6 +137,7 @@
 .jd_banner>ul:nth-of-type(1){
     width: 1000%;
     transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
 }
 .jd_banner>ul:nth-of-type(1)>li{
     float: left;
@@ -156,7 +157,7 @@
     height: 6px;
     position: absolute;
     left: 50%;
-    margin-left: -59px;
+    transform: translateX(-50%);
     bottom: 6px;
 }
 .jd_banner>ul:nth-of-type(2)>li{
@@ -361,11 +362,13 @@
 }
 .seckill>.seckill-header>.dowmtime>.downtime-right>ul>li{
     float: left;
-    border: 1px solid #ccc;
-    margin-left: 5px;
+    margin-left: 2px;
+    padding: 0 2px;
+    color: #000;
 }
-.seckill>.seckill-header>.dowmtime>.downtime-right>ul>li:nth-of-type(even){
-    border: none;
+.seckill>.seckill-header>.dowmtime>.downtime-right>ul>.time-seck{
+    background: #232326;
+    color: #fff;
 }
 .seckill>.seckill-footer{
     width: 100%;
