@@ -32,6 +32,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    padding: 0 14px;
 }
 .jd_search_box>a:nth-of-type(2){
     display: block;
@@ -87,15 +88,7 @@
     border-radius: 15px;
     padding-left: 65px;
 }
-.icon_logo{
-    width: 30px;
-    height: 40px;
-    text-align: center;
-    padding: 0 14px;
-}
 .nav_icon {
-    display: block;
-    position: relative;
     width: 26px;
     height: 3px;
     background-color: #fff;
